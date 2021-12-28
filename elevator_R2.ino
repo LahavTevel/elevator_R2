@@ -116,7 +116,7 @@ void loop()
             closeSolenoid();
             LoadCell.tare();
           }
-          if(load_cell_data>1000 && sysState==UP)
+          if(load_cell_data>1000)
           {
             sysState=STOP;
             set_motor(DOWN, 255);
